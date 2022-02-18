@@ -1,0 +1,16 @@
+appname="带logo二维码生成"
+appver="1.0"
+appcode="1"
+appsdk="15"
+path_pattern=""
+packagename="com.aikesi.demy"
+theme="Theme_Material_Light_DarkActionBar"
+app_key=""
+app_channel=""
+developer=""
+description=""
+debugmode=true
+user_permission={
+  "INTERNET",
+  "WRITE_EXTERNAL_STORAGE"
+}

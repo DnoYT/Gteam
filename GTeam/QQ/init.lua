@@ -1,0 +1,9 @@
+appname="QQ闪照查看器"
+appver="1.0"
+appcode="1"
+appsdk="15"
+packagename="com.sz"
+debugmode=true
+user_permission={
+  "WRITE_EXTERNAL_STORAGE",
+}

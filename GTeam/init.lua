@@ -1,0 +1,14 @@
+appname="GTeam"
+appver="c0.2.5"
+appcode="15"
+appsdk="19"
+packagename="GTS.Gteam.byYT"
+debugmode=true
+user_permission={
+  "ACCESS_NETWORK_STATE",
+  "ACCESS_WIFI_STATE",
+  "INTERNET",
+  "READ_EXTERNAL_STORAGE",
+  "READ_PHONE_STATE",
+  "WRITE_EXTERNAL_STORAGE",
+}

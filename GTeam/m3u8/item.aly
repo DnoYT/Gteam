@@ -1,0 +1,21 @@
+{
+  LinearLayout;
+  orientation="horizontal";
+  gravity="center";
+  layout_width="fill";
+  layout_height="45dp";
+  {
+    TextView;
+    text="项目";
+    id="tex";
+    gravity="center";
+    layout_weight="1";
+  };
+  {
+    CheckBox;
+    id="icd";
+    focusable=false;
+    clickable=false;
+    focusableInTouchMode=false;
+  };
+};

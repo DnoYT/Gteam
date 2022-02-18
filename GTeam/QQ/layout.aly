@@ -1,0 +1,72 @@
+{
+  LinearLayout;
+  layout_height="-1";
+  orientation="vertical";
+  layout_width="-1";
+  background="#9DC8C8";
+  {
+    LinearLayout;
+    layout_width="-1";
+    layout_height="0dp";
+    background="#519D9E";
+  };
+  {
+    LinearLayout;
+    layout_width="-1";
+    layout_height="50dp";
+    elevation="0";
+    background="#519D9E";
+    {
+      LinearLayout;
+      layout_height="50dp";
+      --    layout_weight="1";
+      gravity="center|left";
+      layout_width="-1";
+      {
+        TextView;
+        textSize="19dp";
+        textColor="#FF00FF00";
+        text="白色的是闪照但未点开，点开再次查看闪照即可";
+      };
+    };
+    {
+      LinearLayout;
+      layout_height="50dp";
+      layout_weight="1";
+      gravity="center|right";
+      layout_width="-1";
+
+      --[[  {
+        ImageView;
+        layout_height="25dp";
+        src="res/ic_more_vert_black_24dp.png";
+        ColorFilter="#FFFEFEFE";
+        layout_width="25dp";
+        layout_marginRight="10dp";
+      };
+    ]]
+    };
+  };
+  {
+    LinearLayout;
+    layout_height="20dp";
+    orientation="horizontal";
+    layout_width="-1";
+    background="#519D9E";
+    {
+      CardView;
+      layout_height="50dp";
+      CardBackgroundColor="#9DC8C8";
+      --    radius="10dp";
+      layout_width="-1";
+      elevation="0dp";
+    };
+  };
+  {
+    GridView;
+    layout_height="-1";
+    layout_width="-1";
+    id="wg";
+    numColumns=3;
+  };
+};
