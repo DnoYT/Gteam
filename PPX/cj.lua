@@ -25,8 +25,8 @@ end
 
 function getld(s)
   local  code = http.post(url,"type=getld&start=" .. s);
-    if #code<=0 then
-        code = "-1"
+    if #code<0 then
+        code = "list,l={},-1"
       end
     print(code)
 end
