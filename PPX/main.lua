@@ -10,13 +10,11 @@ import "cj"
 --activity.setTheme(R.AndLua1)
 activity.setTitle("我在人间凑数的日子")
 --activity.setContentView(loadlayout(layout))
-local list,l;
 
 table_L = getl()
-local sj=math.random(0,table_L-1)
+local sj=math.random(0,table_L)
 
-local txtcode = getld(sj)
-print(txtcode)
+local txtcode = getld(2)
 
-load(load(txtcode))
-print(list,l)
+load(txtcode)()
+print(list[1]["text"],l)

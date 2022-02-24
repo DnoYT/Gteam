@@ -1,7 +1,7 @@
 
 
-现在文件名="0.2.4.apk"
-版本号=14
+现在文件名="0.2.5.apk"
+版本号=15
 require "import"
 import "android.os.Environment"
 本地目录=Environment.getExternalStorageDirectory().toString()
