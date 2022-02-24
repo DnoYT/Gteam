@@ -10,6 +10,5 @@ url = "http://gts.gt-eam.cn/ppx/yppx.php"
 
 function getl()
   code = http.post(url,"type=getl")
-  --print(code)
-  return code
+  print(code)
 end
