@@ -16,7 +16,20 @@ table_L = getl()
 local sj=math.random(0,table_L-1)
 
 local txtcode = getld(sj)
-print(txtcode)
 
-load(load(txtcode))
-print(list,l)
+load(txtcode)()
+
+if l>=1 then
+  启动图.text=list[1]["text"] .. "\n\n"..list["title"]
+ else
+  启动图.text="没有启动图 \n\n《我在人间凑数的日子》"
+end
+
+
+沉浸二(0x00000000)
+task(2000,function()
+  task(50,function()
+    activity.finish()
+  end)
+  activity.newActivity("main2")
+end)
