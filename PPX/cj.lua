@@ -22,3 +22,8 @@ function getln(s, l)
     code = http.post(url,"type=getln&start=" .. s .. "&limit=".. s+l);
     print(code)
 end
+
+function getld(s)
+    code = http.post(url,"type=getld&start=" .. s);
+    print(code)
+end
