@@ -11,10 +11,12 @@ import "android.app.*"
 import "android.os.*"
 import "android.widget.*"
 import "android.view.*"
+import "config"
 
 --activity.setTitle('AndroLua+')
 --activity.setTheme(android.R.style.Theme_Holo_Light)
 
+print(dump(_G))
 
 项目={
   {
@@ -62,7 +64,7 @@ import "android.view.*"
 
 import "layout"
 import "GTdata.update"
-activity.setContentView(loadlayout(layout))
+--activity.setContentView(loadlayout(layout))
 import "GTbu.Main"
 import "GTbu.wm"
 --主题布局
