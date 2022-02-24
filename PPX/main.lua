@@ -16,6 +16,7 @@ table_L = getl()
 local sj=math.random(0,table_L-1)
 
 local txtcode = getld(sj)
+print(txtcode)
 
-load(txtcode)()
+load(load(txtcode))
 print(list,l)
