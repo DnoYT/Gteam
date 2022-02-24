@@ -1,3 +1,11 @@
+--[[
+Author: your name
+Date: 2022-02-18 23:39:58
+LastEditTime: 2022-02-24 11:43:36
+LastEditors: your name
+Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+FilePath: \gteam\rz\cj.lua
+--]]
 require "import"
 import "android.app.*"
 import "android.os.*"
@@ -5,6 +13,8 @@ import "android.widget.*"
 import "android.view.*"
 import "layout"
 import "http"
+
+
 
 
 url="http://gts.gt-eam.cn/ppx"

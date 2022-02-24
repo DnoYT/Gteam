@@ -53,6 +53,11 @@ import "android.view.*"
     ["介绍"]= "我不想活理所当然",
     ["logo"]= "rz/icon.png",
   },
+  {
+    ["名"]= "我在人间凑数的日子2",
+    ["介绍"]= "2022重著版",
+    ["logo"]= "rz/icon.png",
+  },
 }
 
 import "layout"
@@ -145,6 +150,8 @@ lb.onItemClick=function(parent, v, pos,id)
     activity.newActivity("QQ/main")
    case "我在人间凑数的日子"
     activity.newActivity("rz/main")
+   case "我在人间凑数的日子2"
+    activity.newActivity("PPX/main")
   end
   return true
 end
