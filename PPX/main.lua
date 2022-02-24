@@ -15,4 +15,4 @@ activity.setContentView(loadlayout(layout))
 table_L = getl()
 sj=math.random(1,table_L)
 
-getln(s,1)
+getln(sj,1)
