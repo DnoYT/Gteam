@@ -9,7 +9,7 @@ import "cj"
 
 --activity.setTheme(R.AndLua1)
 activity.setTitle("我在人间凑数的日子")
-activity.setContentView(loadlayout(layout))
+--activity.setContentView(loadlayout(layout))
 
 
 table_L = getl()

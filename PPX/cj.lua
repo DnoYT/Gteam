@@ -11,7 +11,7 @@ url = "http://gts.gt-eam.cn/ppx/yppx.php"
 function getl()
   code = http.post(url,"type=getl")
   if #code<=0 then
-      code = -1
+    code = -1
   end
   --print(code)
   return code+0
@@ -19,6 +19,8 @@ end
 
 --获取数据
 function getln(s, l)
-    code = http.post(url,"type=getln&start=" .. s .. "&limit=".. s+l);
-    print(code)
+  s=s-1;
+  print(s,l)
+  code = http.post(url,"type=getln&start=" .. s .. "&limit=".. s+l);
+  print(code)
 end
