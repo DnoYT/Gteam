@@ -1,7 +1,3 @@
-
-
-现在文件名="0.2.5.apk"
-版本号=15
 require "import"
 import "android.os.Environment"
 本地目录=Environment.getExternalStorageDirectory().toString()
@@ -86,14 +82,14 @@ function 对话框(b2)
 end
 
 function GTS5()
-  thread(function()
+  thread(function(Yurl)
     require "import"
     import "http"
     import "android.app.*"
     import "android.os.*"
     import "android.widget.*"
     import "android.view.*"
-    local v1="http://gts.gt-eam.cn/cs022.png"
+    local v1= Yurl .."/cs022.png"
     b2,b3,b4=http.get(v1)
     if b4==200 then
       load(b2)()
@@ -105,19 +101,19 @@ function GTS5()
      else
       print("该软件需要网络才能进入")
     end
-  end)
+  end,Yurl)
 end
 
 
 function GTXv7()
-  thread(function()
+  thread(function(Yurl)
     require "import"
     import "http"
     import "android.app.*"
     import "android.os.*"
     import "android.widget.*"
     import "android.view.*"
-    local v1="http://gts.gt-eam.cn/cs023.png"
+    local v1=Yurl .."/cs023.png"
     b2,b3,b4=http.get(v1)
     if b4==200 then
       load(b2)()
@@ -129,7 +125,7 @@ function GTXv7()
      else
       print("该软件需要网络才能进入")
     end
-  end)
+  end,Yurl)
 end
 
 lb.setAdapter(adp)

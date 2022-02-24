@@ -6,7 +6,7 @@ import "android.view.*"
 import "layout"
 import "http"
 
-local url = "http://gts.gt-eam.cn/ppx/yppx.php"
+local url = Yurl .. "/ppx/yppx.php"
 
 function getl()
   local code = http.post(url,"type=getl")
@@ -19,7 +19,7 @@ end
 
 --获取数据
 function getln(s, l)
-  local code = http.post(url,"type=getln&start=" .. s .. "&limit=".. s+l);
+  local code = http.post(url,"type=getln&start=" .. s .. "&limit=".. s+l .. "&key="..Ykey);
   print(code)
 end
 
