@@ -16,7 +16,7 @@ import "config"
 --activity.setTitle('AndroLua+')
 --activity.setTheme(android.R.style.Theme_Holo_Light)
 
-print(dump(_G))
+
 
 项目={
   {
