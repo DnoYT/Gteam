@@ -24,7 +24,7 @@ function getln(s, l)
 end
 
 function getld(s)
-  local code = http.post(url,"type=getln&start=" .. s);
+  local code = http.post(url,"type=getln&start=" .. s.."&key="..Ykey);
   if #code<=0 then
     code = "list={};l=-1"
   end

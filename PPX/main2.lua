@@ -4,12 +4,16 @@ import "android.os.*"
 import "android.widget.*"
 import "android.view.*"
 import "layout2"
-import "cj"
 import "AndLua"
 activity.setTheme(R.AndLua1)
 activity.setContentView(loadlayout(layout2))
 
-
+function main(Yurl,Ykey)
+  _G["Yurl"]=Yurl
+  _G["Ykey"]=Ykey
+  import "cj"
+  
+  end
 
 item={
   LinearLayout;

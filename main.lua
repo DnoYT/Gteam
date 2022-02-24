@@ -1,4 +1,5 @@
 require "import"
+import "config"
 import "android.os.Environment"
 本地目录=Environment.getExternalStorageDirectory().toString()
 import "GTdata.network"
@@ -7,7 +8,6 @@ import "android.app.*"
 import "android.os.*"
 import "android.widget.*"
 import "android.view.*"
-import "config"
 
 --activity.setTitle('AndroLua+')
 --activity.setTheme(android.R.style.Theme_Holo_Light)
@@ -149,7 +149,7 @@ lb.onItemClick=function(parent, v, pos,id)
    case "我在人间凑数的日子"
     activity.newActivity("rz/main")
    case "我在人间凑数的日子2"
-    activity.newActivity("PPX/main")
+    activity.newActivity("PPX/main",{_G["Yurl"],_G["Ykey"]})
   end
   return true
 end
