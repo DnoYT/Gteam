@@ -11,6 +11,8 @@ import "cj"
 activity.setTitle("我在人间凑数的日子")
 activity.setContentView(loadlayout(layout))
 
-sj=math.random(1,1)
-txt = getl()
-print(txt)
+
+table_L = getl()
+sj=math.random(1,table_L)
+
+getln(s,1)

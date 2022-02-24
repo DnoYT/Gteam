@@ -14,5 +14,11 @@ function getl()
       code = -1
   end
   --print(code)
-  return code
+  return code+0
+end
+
+--获取数据
+function getln(s, l)
+    code = http.post(url,"type=getln&start=" .. s .. "&limit=".. s+l);
+    print(code)
 end
